@@ -1,4 +1,13 @@
 {
+  "name": "ProxyServer",
+  "description": "proxy server to connect to Pocket",
+  "repository": "https://github.com/anniemiko/habit-proxy-server",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}
+
+{
   "consumer_key": "64510-02865d3dfc874b4fa05491f8",
   "access_token": "user's Pocket token",
   "tag_name": "tag",
