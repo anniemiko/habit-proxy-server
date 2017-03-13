@@ -12,6 +12,18 @@ app.get('/test', function(req, res){ // listens for request on /api route
 
 /* PUT YOUR CODE BETWEEN COMMENTS */
 
+app.get('/v3/oauth/request', function(req, res){
+  var consumerKey = req.query.consumer_key;
+  var redirectUri = req.query.redirect_uri;
+
+  var url = 'https://getpocket.com/v3/oauth/request?' +
+            'consumer_key=' + consumerKey + '&' +
+            'key=64510-02865d3dfc874b4fa05491f8'
+
+  request(url, function(error, response, body){
+    res.send(body);
+  });
+})
 
 
 /* PUT YOUR CODE ABOVE THIS COMMENT */
