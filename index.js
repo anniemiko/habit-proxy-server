@@ -41,7 +41,7 @@ app.get('/request', function(req, res) {
 
  request.post(options, function(error, response, body) {
    var request_token = JSON.parse(body).code;
-   var url = "https://getpocket.com/auth/authorize" + '?request_token=' + request_token + '&redirect_uri=' + 'http://127.0.0.1:8080/dist/#habitdetail/' + req.query.habitId;
+   var url = "https://getpocket.com/auth/authorize" + '?request_token=' + request_token + '&redirect_uri=' + 'https://anniemiko.github.io/Final-Project/#habitdetail/' + req.query.habitId;
 
    res.send({
      url,
